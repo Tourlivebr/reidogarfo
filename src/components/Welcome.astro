@@ -1,4 +1,35 @@
 ---
+import { Image } from 'astro:assets';
+import logocat from '../assets/logocat.png';
+---
+
+<section class="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center relative">
+  <div class="container mx-auto px-4 py-16 text-center">
+    <div class="mb-8">
+      <Image 
+        src={logocat} 
+        alt="Centro Automotivo" 
+        class="mx-auto w-64 h-auto"
+      />
+    </div>
+    <h1 class="text-5xl font-bold text-blue-600 mb-6">Centro Automotivo</h1>
+    <p class="text-2xl text-gray-700 mb-8">Cuidamos do seu carro, como se fosse o nosso!</p>
+    <div class="flex justify-center gap-6">
+      <a 
+        href="#servicos" 
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+      >
+        Nossos Serviços
+      </a>
+      <a 
+        href="#contato" 
+        class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300"
+      >
+        Fale Conosco
+      </a>
+    </div>
+  </div>
+</section>
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 ---
