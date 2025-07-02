@@ -24,7 +24,7 @@ interface Props {
 
 <section id="depoimentos" class="py-20 bg-white">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-blue-600 text-center mb-12">O que dizem nossos clientes</h2>
+    <h2 class="text-4xl font-bold text-orange-700 text-center mb-12">O que dizem nossos clientes</h2>
     
     <div class="grid md:grid-cols-3 gap-8">
       {depoimentos.map(depoimento => (
@@ -44,7 +44,7 @@ interface Props {
             ))}
           </div>
           <p class="text-gray-700 mt-4 mb-6">{depoimento.comentario}</p>
-          <p class="text-blue-600 font-semibold">{depoimento.nome}</p>
+          <p class="text-orange-700 font-semibold">{depoimento.nome}</p>
         </div>
       ))}
     </div>
