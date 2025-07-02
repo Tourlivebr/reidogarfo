@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import certAse from '../assets/cert_ase.gif';
+import certSkf from '../assets/cert_skf.jpg';
+---
+
 <section id="certificacoes" class="py-20 bg-white">
   <div class="container mx-auto px-4">
     <h2 class="text-4xl font-bold text-blue-600 text-center mb-12">Certificações e Garantias</h2>
@@ -23,15 +29,15 @@
       
       <div class="grid grid-cols-2 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300">
-          <img
-            src="/src/assets/cert_ase.gif"
+          <Image
+            src={certAse}
             alt="Certificação ASE - Automotive Service Excellence"
             class="w-full h-auto object-contain"
           />
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300">
-          <img
-            src="/src/assets/cert_skf.jpg"
+          <Image
+            src={certSkf}
             alt="Certificação SKF - Parceiro de Manutenção"
             class="w-full h-auto object-contain"
           />
