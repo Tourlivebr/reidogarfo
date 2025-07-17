@@ -2,45 +2,119 @@
 import { Image } from 'astro:assets';
 import certAse from '../assets/cert_ase.gif';
 import certSkf from '../assets/cert_skf.jpg';
----
 
-<section id="certificacoes" class="py-20 bg-white">
+const especialidades = [
+  {
+    titulo: "Chef Especializado",
+    descricao: "Nossa equipe possui formação internacional em gastronomia",
+    imagem: "chef",
+    destaque: "15 anos de experiência"
+  },
+  {
+    titulo: "Ingredientes Premium",
+    descricao: "Selecionamos apenas os melhores ingredientes do mercado",
+    imagem: "ingredients",
+    destaque: "Qualidade garantida"
+  },
+  {
+    titulo: "Ambiente Familiar",
+    descricao: "Espaço acolhedor perfeito para toda a família",
+    imagem: "family",
+    destaque: "Conforto e aconchego"
+  },
+  {
+    titulo: "Receitas Autênticas",
+    descricao: "Pratos tradicionais preparados com técnicas originais",
+    imagem: "recipe",
+    destaque: "Sabores autênticos"
+  }
+];
+---
+<section id="especialidades" class="py-20 bg-gradient-to-br from-golden-yellow/10 to-warm-orange/10">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-orange-700 text-center mb-12">Certificações e Garantias</h2>
-    
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6 text-gray-700">
-        <p class="text-lg">
-          Na Auto Mecânica Três Coroas, trabalhamos apenas com peças de primeira linha e
-          oferecemos garantia em todos os serviços realizados.
-        </p>
-        <p class="text-lg">
-          Nossa equipe passa por treinamentos constantes e possui certificações das
-          principais montadoras e fabricantes de autopeças.
-        </p>
-        <ul class="list-disc list-inside space-y-2 ml-4">
-          <li>Garantia em todos os serviços</li>
-          <li>Peças originais de fábrica</li>
-          <li>Profissionais certificados ASE</li>
-          <li>Parceiro certificado SKF</li>
-          <li>Equipamentos de última geração</li>
-        </ul>
-      </div>
-      
-      <div class="grid grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300">
-          <Image
-            src={certAse}
-            alt="Certificação ASE - Automotive Service Excellence"
-            class="w-full h-auto object-contain"
-          />
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-display font-bold text-dark-chocolate mb-4">
+        Nossas 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-warm-orange to-deep-red">
+          Especialidades
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-warm-orange to-golden-yellow rounded-full mx-auto mb-6"></div>
+      <p class="text-xl text-rich-brown/80 max-w-2xl mx-auto">
+        O que nos torna únicos e especiais na arte da gastronomia
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {especialidades.map((item, index) => (
+        <div class="group relative">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-golden-yellow/20">
+            <div class="relative mb-6">
+              <div class="w-24 h-24 mx-auto bg-gradient-to-br from-golden-yellow to-warm-orange rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                {item.imagem === 'chef' && (
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                )}
+                {item.imagem === 'ingredients' && (
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                )}
+                {item.imagem === 'family' && (
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                )}
+                {item.imagem === 'recipe' && (
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                )}
+              </div>
+              <div class="absolute -top-2 -right-2 bg-gradient-to-r from-deep-red to-wine-red text-white text-xs px-3 py-1 rounded-full font-semibold">
+                {item.destaque}
+              </div>
+            </div>
+
+            <div class="text-center">
+              <h3 class="text-xl font-display font-bold text-dark-chocolate mb-3">
+                {item.titulo}
+              </h3>
+              <p class="text-rich-brown/80 leading-relaxed">
+                {item.descricao}
+              </p>
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-br from-golden-yellow/5 to-warm-orange/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+
+          <div class={`absolute -z-10 w-32 h-32 bg-gradient-to-br opacity-20 rounded-full blur-2xl transition-all duration-500 group-hover:scale-125 ${
+            index % 2 === 0 
+              ? 'from-golden-yellow/30 to-warm-orange/30 -top-8 -left-8' 
+              : 'from-wine-red/30 to-deep-red/30 -bottom-8 -right-8'
+          }`}></div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow duration-300">
-          <Image
-            src={certSkf}
-            alt="Certificação SKF - Parceiro de Manutenção"
-            class="w-full h-auto object-contain"
-          />
+      ))}
+    </div>
+
+    <div class="mt-20 bg-gradient-to-r from-dark-chocolate to-wine-red rounded-3xl p-8 text-white">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="space-y-2">
+          <div class="text-4xl font-bold text-golden-yellow">500+</div>
+          <div class="text-cream/80">Pratos Servidos Diariamente</div>
+        </div>
+        <div class="space-y-2">
+          <div class="text-4xl font-bold text-golden-yellow">15</div>
+          <div class="text-cream/80">Anos de Experiência</div>
+        </div>
+        <div class="space-y-2">
+          <div class="text-4xl font-bold text-golden-yellow">50+</div>
+          <div class="text-cream/80">Receitas Internacionais</div>
+        </div>
+        <div class="space-y-2">
+          <div class="text-4xl font-bold text-golden-yellow">98%</div>
+          <div class="text-cream/80">Clientes Satisfeitos</div>
         </div>
       </div>
     </div>

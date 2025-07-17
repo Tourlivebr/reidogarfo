@@ -3,33 +3,133 @@ import { Image } from 'astro:assets';
 import frenteQuemSomos from '../assets/frente_quem_somos.jpg';
 ---
 
-<section id="quem-somos" class="pt-32 pb-20 bg-white">
+<section id="quem-somos" class="py-20 bg-gradient-to-br from-cream to-golden-yellow/10">
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-orange-700 text-center mb-12">Oficina SKF Três Coroas</h2>
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div class="space-y-6">
-        <p class="text-gray-700 text-lg">
-          Com mais de 15 anos de experiência no mercado automotivo, a Oficina SKF Três Coroas
-          se destaca pela excelência em serviços mecânicos e compromisso com a satisfação do cliente.
-        </p>
-        <p class="text-gray-700 text-lg">
-          Nossa equipe altamente qualificada utiliza equipamentos de última geração e peças
-          originais para garantir a qualidade e segurança do seu veículo.
-        </p>
-        <p class="text-gray-700 text-lg">
-          Nosso compromisso é oferecer soluções eficientes e transparentes, construindo
-          relacionamentos duradouros com nossos clientes.
-        </p>
-         <p class="text-gray-700 text-lg">
-          Nossa Missão: Cuidamos do seu carro como se fosse nosso!
-        </p>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Conteúdo Textual -->
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h2 class="text-5xl font-display font-bold text-dark-chocolate">
+            Nossa 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-warm-orange to-deep-red">
+              História
+            </span>
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-warm-orange to-golden-yellow rounded-full"></div>
+        </div>
+
+        <div class="space-y-6 text-lg text-rich-brown/80 leading-relaxed">
+          <p>
+            Nascemos da paixão por unir culturas através da gastronomia. No <strong class="text-dark-chocolate">Sabores do Mundo</strong>, 
+            cada prato conta uma história, cada sabor desperta uma memória.
+          </p>
+          
+          <p>
+            Nosso <strong class="text-warm-orange">buffet de almoço</strong> oferece uma viagem culinária completa, 
+            com pratos tradicionais brasileiros e especialidades internacionais preparadas com ingredientes frescos e muito amor.
+          </p>
+          
+          <p>
+            À noite, transformamos nosso ambiente em uma <strong class="text-deep-red">panquecaria internacional</strong>, 
+            onde servimos criações únicas inspiradas nos sabores do mundo todo - desde crepes franceses até panquecas japonesas.
+          </p>
+        </div>
+
+        <!-- Características especiais -->
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="flex items-start space-x-4">
+            <div class="bg-gradient-to-br from-fresh-green to-fresh-green/80 p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-dark-chocolate">Ingredientes Frescos</h4>
+              <p class="text-rich-brown/70 text-sm">Selecionados diariamente</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="bg-gradient-to-br from-warm-orange to-golden-yellow p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-dark-chocolate">Feito com Amor</h4>
+              <p class="text-rich-brown/70 text-sm">Cada prato é uma obra de arte</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="bg-gradient-to-br from-wine-red to-deep-red p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-dark-chocolate">Ambiente Acolhedor</h4>
+              <p class="text-rich-brown/70 text-sm">Perfeito para toda família</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="bg-gradient-to-br from-golden-yellow to-warm-orange p-3 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-dark-chocolate">Sabores Únicos</h4>
+              <p class="text-rich-brown/70 text-sm">Receitas do mundo todo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6">
+          <a 
+            href="#cardapio" 
+            class="inline-flex items-center gap-2 bg-gradient-to-r from-warm-orange to-golden-yellow hover:from-golden-yellow hover:to-warm-orange text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+          >
+            Conheça Nosso Cardápio
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-        <Image
-          src={frenteQuemSomos}
-          alt="Fachada da Oficina SKF Três Coroas"
-          class="absolute inset-0 w-full h-full object-cover"
-        />
+
+      <!-- Imagem -->
+      <div class="relative">
+        <div class="relative z-10">
+          <!-- Placeholder para imagem do restaurante -->
+          <div class="aspect-[4/5] bg-gradient-to-br from-warm-orange/20 to-golden-yellow/20 rounded-3xl flex items-center justify-center border-4 border-golden-yellow/30">
+            <div class="text-center space-y-4">
+              <div class="w-24 h-24 mx-auto bg-gradient-to-br from-warm-orange to-golden-yellow rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <p class="text-rich-brown/60 text-sm">
+                [Imagem do Interior do Restaurante]<br/>
+                Substitua por foto real
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Elementos decorativos -->
+        <div class="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-golden-yellow/20 to-warm-orange/20 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-gradient-to-br from-wine-red/20 to-deep-red/20 rounded-full blur-2xl"></div>
+        
+        <!-- Elementos flutuantes -->
+        <div class="absolute top-10 right-10 animate-float">
+          <div class="w-4 h-4 bg-golden-yellow rounded-full opacity-60"></div>
+        </div>
+        <div class="absolute bottom-20 left-10 animate-float" style="animation-delay: -2s;">
+          <div class="w-6 h-6 bg-warm-orange rounded-full opacity-40"></div>
+        </div>
       </div>
     </div>
   </div>

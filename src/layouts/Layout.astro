@@ -48,11 +48,11 @@ const socialImageURL = new URL('/social-image.jpg', Astro.url);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-50 min-h-screen">
+  <body class="bg-cream min-h-screen font-body">
     <slot />
   </body>
 </html>
@@ -63,5 +63,21 @@ const socialImageURL = new URL('/social-image.jpg', Astro.url);
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	}
+	
+	/* Animações personalizadas */
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	.fade-in-up {
+		animation: fadeInUp 0.8s ease-out;
 	}
 </style>
