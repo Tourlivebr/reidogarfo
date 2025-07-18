@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logoReiDoGarfo from '../assets/logo_reidogarfob.png';
+
 const menuItems = [
   { href: "#inicio", text: "Início" },
   { href: "#quem-somos", text: "Nossa História" },
@@ -9,8 +12,8 @@ const menuItems = [
 ];
 
 const redesSociais = [
-  { nome: "Instagram", url: "https://www.instagram.com/saboresdomundomundo", icon: "instagram" },
-  { nome: "Facebook", url: "https://www.facebook.com/saboresdomundomundo", icon: "facebook" },
+  { nome: "Instagram", url: "https://www.instagram.com/reidogarfo", icon: "instagram" },
+  { nome: "Facebook", url: "https://www.facebook.com/reidogarfo", icon: "facebook" },
   { nome: "WhatsApp", url: "https://wa.me/5554999999999", icon: "whatsapp" },
 ];
 
@@ -29,13 +32,15 @@ const horarios = [
       <!-- Logo e Descrição -->
       <div class="space-y-4">
         <div class="flex items-center gap-3">
-          <div class="bg-gradient-to-r from-golden-yellow to-warm-orange p-3 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>
+          <div class="group-hover:scale-110 transition-transform duration-300">
+            <Image
+              src={logoReiDoGarfo}
+              alt="Rei do Garfo - Restaurante"
+              class="h-16 w-auto object-contain"
+            />
           </div>
           <div>
-            <h3 class="text-xl font-display font-bold text-golden-yellow">Sabores do Mundo</h3>
+            <h3 class="text-xl font-display font-bold text-golden-yellow">Rei do Garfo</h3>
             <p class="text-sm text-cream/80">Restaurante & Panquecaria</p>
           </div>
         </div>
@@ -139,7 +144,7 @@ const horarios = [
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-golden-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <p class="text-cream/90">contato@saboresdomundomundo.com.br</p>
+            <p class="text-cream/90">contato@reidogarfo.com.br</p>
           </div>
         </div>
       </div>
@@ -149,7 +154,7 @@ const horarios = [
     <div class="border-t border-cream/20 pt-8">
       <div class="flex flex-col md:flex-row justify-between items-center text-sm">
         <p class="text-cream/80">
-          &copy; {new Date().getFullYear()} Sabores do Mundo. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Rei do Garfo. Todos os direitos reservados.
         </p>
         <p class="mt-4 md:mt-0 text-cream/80">
           Desenvolvido com ❤️ para despertar seus sentidos
