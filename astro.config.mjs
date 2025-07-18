@@ -4,6 +4,18 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:3000',
-  integrations: [tailwind()]
+  site: 'https://reidogarfo.com.br',
+  base: '/',
+  trailingSlash: 'ignore',
+  build: {
+    inlineStylesheets: 'auto',
+  },
+  compressHTML: true,
+  integrations: [tailwind()],
+  vite: {
+    build: {
+      cssMinify: true,
+      minify: true,
+    },
+  },
 });

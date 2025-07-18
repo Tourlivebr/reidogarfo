@@ -10,13 +10,19 @@ import Contato from '../components/Contato.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 
-// SEO Meta Tags
-const title = "Sabores do Mundo | Restaurante Buffet & Panquecas Internacionais";
-const description = "Restaurante especializado em buffet de almoço e panquecas internacionais para jantar. Sabores únicos que despertam seus sentidos. Venha experimentar!";
-const keywords = "restaurante, buffet, panquecas internacionais, almoço, jantar, comida internacional, gastronomia, sabores do mundo";
+// SEO Meta Tags Otimizados
+const title = "Rei do Garfo - Restaurante Buffet de Almoço e Panquecas Internacionais | São Paulo";
+const description = "Descubra o Rei do Garfo: o melhor restaurante de São Paulo com buffet variado no almoço e panquecas internacionais no jantar. Sabores únicos, ambiente acolhedor e experiência gastronômica inesquecível. Faça sua reserva!";
+const keywords = "restaurante são paulo, buffet almoço, panquecas internacionais, comida internacional, gastronomia, rei do garfo, reservas restaurante, jantar romântico, almoço executivo, culinária mundial, restaurante zona sul, melhor buffet sp";
 ---
 
-<Layout title={title} description={description} keywords={keywords}>
+<Layout 
+  title={title} 
+  description={description} 
+  keywords={keywords}
+  author="Rei do Garfo Restaurante"
+  ogType="website"
+>
   <Header />
   <main>
     <Welcome />
