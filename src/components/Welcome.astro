@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import fachada from '../assets/fachada_rg.jpg';
 ---
 
 <section id="inicio" class="min-h-screen relative overflow-hidden">
@@ -90,28 +91,16 @@ import { Image } from 'astro:assets';
       </div>
 
       <!-- Imagem/Ilustração do Lado Direito -->
-      <div class="relative">
-        <div class="relative z-10 bg-gradient-to-br from-cream/10 to-golden-yellow/10 backdrop-blur-sm rounded-3xl p-8 border border-golden-yellow/20">
-          <!-- Placeholder para imagem do restaurante -->
-          <div class="aspect-square bg-gradient-to-br from-golden-yellow/20 to-warm-orange/20 rounded-2xl flex items-center justify-center">
-            <div class="text-center space-y-4">
-              <div class="w-32 h-32 mx-auto bg-gradient-to-br from-golden-yellow to-warm-orange rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <p class="text-cream/60 text-sm">
-                [Imagem do Restaurante]<br/>
-                Substitua por foto real
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Elementos decorativos -->
-        <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-golden-yellow/30 to-warm-orange/30 rounded-full blur-xl animate-pulse-slow"></div>
-        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-wine-red/30 to-deep-red/30 rounded-full blur-xl animate-pulse-slow" style="animation-delay: -1s;"></div>
-      </div>
+ <div class="relative">
+    <div class="relative z-10 bg-gradient-to-br from-cream/10 to-golden-yellow/10 backdrop-blur-sm rounded-3xl p-2 border border-golden-yellow/20">
+
+      <!-- 🖼️ Imagem da fachada preenchendo o espaço -->
+      <Image
+        src={fachada}
+        alt="Rei do Garfo - Restaurante"
+        class="rounded-2xl w-full h-full object-cover" 
+      />
+    </div>
     </div>
   </div>
 

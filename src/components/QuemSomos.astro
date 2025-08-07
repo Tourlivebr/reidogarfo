@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import frenteQuemSomos from '../assets/frente_quem_somos.jpg';
+import interno from '../assets/interno_rg.jpg';
+import internoQuemSomos from '../assets/interno_quem_somos.jpg';
+
 ---
 
 <section id="quem-somos" class="py-20 bg-gradient-to-br from-cream to-golden-yellow/10">
@@ -101,23 +103,16 @@ import frenteQuemSomos from '../assets/frente_quem_somos.jpg';
       </div>
 
       <!-- Imagem -->
-      <div class="relative">
-        <div class="relative z-10">
-          <!-- Placeholder para imagem do restaurante -->
-          <div class="aspect-[4/5] bg-gradient-to-br from-warm-orange/20 to-golden-yellow/20 rounded-3xl flex items-center justify-center border-4 border-golden-yellow/30">
-            <div class="text-center space-y-4">
-              <div class="w-24 h-24 mx-auto bg-gradient-to-br from-warm-orange to-golden-yellow rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <p class="text-rich-brown/60 text-sm">
-                [Imagem do Interior do Restaurante]<br/>
-                Substitua por foto real
-              </p>
-            </div>
-          </div>
-        </div>
+       <div class="relative">
+    <div class="relative z-10 bg-gradient-to-br from-cream/10 to-golden-yellow/10 backdrop-blur-sm rounded-3xl p-2 border border-golden-yellow/20">
+
+      <!-- 🖼️ Imagem da fachada preenchendo o espaço -->
+      <Image
+        src={interno}
+        alt="Rei do Garfo - Restaurante"
+        class="rounded-2xl w-full h-full object-cover" 
+      />
+    </div>
         
         <!-- Elementos decorativos -->
         <div class="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-golden-yellow/20 to-warm-orange/20 rounded-full blur-2xl"></div>

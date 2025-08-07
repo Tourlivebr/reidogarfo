@@ -54,7 +54,7 @@
             </div>
             <div>
               <p class="font-semibold text-golden-yellow">Endereço</p>
-              <p class="text-cream/90">Rua dos Sabores, 123 - Centro<br/>Três Coroas - RS</p>
+              <p class="text-cream/90">R. Visc. de Mauá, 641 - Centro,<br/>Canela - RS, 95680-000</p>
             </div>
           </div>
           
@@ -66,7 +66,8 @@
             </div>
             <div>
               <p class="font-semibold text-golden-yellow">Telefone</p>
-              <p class="text-cream/90">(54) 99999-9999</p>
+              <p class="text-cream/90">(54) 98137-8297</p>
+
             </div>
           </div>
           
@@ -78,7 +79,7 @@
             </div>
             <div>
               <p class="font-semibold text-golden-yellow">E-mail</p>
-              <p class="text-cream/90">contato@saboresdomundomundo.com.br</p>
+              <p class="text-cream/90">reidogarfocanela@gmail.com</p>
             </div>
           </div>
         </div>
@@ -86,7 +87,8 @@
         <!-- Botões de Ação -->
         <div class="flex flex-col sm:flex-row gap-4">
           <a
-            href="https://wa.me/5554999999999"
+            href="https://wa.me/5554981378297"
+
             target="_blank"
             rel="noopener noreferrer"
             class="flex-1 inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-semibold"
@@ -98,7 +100,7 @@
           </a>
           
           <a
-            href="tel:+5554999999999"
+            href="tel:54981378297"
             class="flex-1 inline-flex items-center justify-center gap-3 bg-gradient-to-r from-golden-yellow to-warm-orange hover:from-warm-orange hover:to-golden-yellow text-white px-6 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-semibold"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,63 +119,25 @@
           <h3 class="text-xl font-display font-bold text-golden-yellow mb-4">Nossa Localização</h3>
           <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden">
             <!-- Placeholder para mapa -->
-            <div class="w-full h-64 bg-gradient-to-br from-golden-yellow/20 to-warm-orange/20 rounded-xl flex items-center justify-center">
-              <div class="text-center space-y-2">
-                <div class="w-16 h-16 mx-auto bg-gradient-to-br from-golden-yellow to-warm-orange rounded-full flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <p class="text-cream/80 text-sm">
-                  [Mapa do Google Maps]<br/>
-                  Substitua pela localização real
-                </p>
-              </div>
-            </div>
+            <!-- Container do Mapa com estilo arredondado e borda -->
+<div class="w-full rounded-xl overflow-hidden border border-golden-yellow/30 shadow-lg">
+
+  <!-- Mapa incorporado do Google, agora responsivo e alinhado -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.1777482175285!2d-50.81104972369796!3d-29.365084300108254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95192d27cbce821d%3A0x8dd69bfba837c6f6!2sRestaurante%20O%20Rei%20Do%20Garfo%20Canela!5e0!3m2!1spt-BR!2sbr!4v1754582437343!5m2!1spt-BR!2sbr"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    class="rounded-b-xl"
+  ></iframe>
+
+</div>
+
           </div>
         </div>
-
-        <!-- Formulário de Reserva -->
-        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-golden-yellow/20">
-          <h3 class="text-xl font-display font-bold text-golden-yellow mb-4">Reserva Rápida</h3>
-          <form class="space-y-4">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <input 
-                type="text" 
-                placeholder="Seu nome"
-                class="w-full px-4 py-3 bg-white/20 border border-cream/30 rounded-lg text-white placeholder-cream/60 focus:outline-none focus:border-golden-yellow transition-colors"
-              />
-              <input 
-                type="tel" 
-                placeholder="Telefone"
-                class="w-full px-4 py-3 bg-white/20 border border-cream/30 rounded-lg text-white placeholder-cream/60 focus:outline-none focus:border-golden-yellow transition-colors"
-              />
-            </div>
-            <div class="grid sm:grid-cols-2 gap-4">
-              <input 
-                type="date" 
-                class="w-full px-4 py-3 bg-white/20 border border-cream/30 rounded-lg text-white focus:outline-none focus:border-golden-yellow transition-colors"
-              />
-              <select class="w-full px-4 py-3 bg-white/20 border border-cream/30 rounded-lg text-white focus:outline-none focus:border-golden-yellow transition-colors">
-                <option value="">Horário</option>
-                <option value="almoco">Almoço (11h30-15h)</option>
-                <option value="jantar">Jantar (18h-23h)</option>
-              </select>
-            </div>
-            <input 
-              type="number" 
-              placeholder="Número de pessoas"
-              min="1"
-              class="w-full px-4 py-3 bg-white/20 border border-cream/30 rounded-lg text-white placeholder-cream/60 focus:outline-none focus:border-golden-yellow transition-colors"
-            />
-            <button 
-              type="submit"
-              class="w-full bg-gradient-to-r from-golden-yellow to-warm-orange hover:from-warm-orange hover:to-golden-yellow text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Solicitar Reserva
-            </button>
-          </form>
         </div>
       </div>
     </div>
